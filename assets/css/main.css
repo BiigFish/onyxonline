@@ -1,0 +1,364 @@
+html {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a {
+  color:white;
+  text-decoration: none;
+}
+body {
+  margin:0;
+}
+
+.banner {
+  background: url(../Images/background+onyx+online+with+logo.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* HEADER STUFF */
+
+.header {
+  letter-spacing: .02em;
+  font-size: 16px;
+  font-style: normal;
+  text-transform: none;
+  
+
+
+}
+
+.header ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin:45px;
+}
+
+.header li {
+  display: inline;
+  padding: 6px;
+
+}
+
+.header li a {
+  color: white;
+
+}
+
+.links {
+  position: absolute;
+  display: inline;
+  right: 15px;
+  padding-left: 5px
+}
+
+
+.contact {
+  border: 1px solid white;
+  padding: 6 15px;
+  transition-duration: 0.2s;
+}
+.contact:hover {
+  background: white;
+  color: black;
+}
+
+/* stlying for social link symbols */
+.fa {
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 10;
+}
+.fa-facebook {
+  color: white;
+}
+.fa-twitter {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+
+/* BANNER STUFF */
+
+.banner-text {
+  position:absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-bottom: 3vw;
+  bottom: 35px;
+}
+.banner-text h1 {
+  font-size: 2.4rem;
+  margin: 0;
+
+}
+.button {
+  border: 1px solid white;
+  padding: 10 20px;
+  margin: 40 60px;
+  display: inline-block;
+  transition-duration: 0.2s;
+}
+.button:hover {
+  background: white;
+  color: black;
+}
+
+
+/* Mobile Header */
+.topnav-icon {
+  display:none;
+}
+.mobile {
+  display: inline;
+}
+@media only screen and (max-width: 1000px) {
+  .header li a {display: none;}
+  .socials {display: none;}
+  .contact {display: none;}
+  .topnav-icon {
+    float: right;
+    display: block;
+  }
+
+  .responsive {
+    position:absolute;
+    right: 15px;
+    display: block;
+    text-align: center;
+    color:red;
+
+  background: black;
+  background-size: cover;
+  background-position: center;
+
+  }  
+
+}
+
+
+/* GALLERY STUFF */
+
+.gallery {
+  width: 33.33%;
+  float: left; /*a god, lets them all fit nice and snug*/
+  overflow: hidden; /*when hovered and zooms in, you don't see overflow*/
+  
+}
+.gallery img {
+  filter: grayscale(100%);
+  transition: .3s ease;
+}
+.gallery:hover img{
+  filter: grayscale(0%); /*black and white to color when hovered*/
+  transform: scale(1.1); /*very mild zoom in*/
+
+}
+/* blackmagic that you're supposed to do after using a float */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* resizes columns when screen is small*/
+@media only screen and (max-width: 700px) {
+  .gallery {
+    width: 49.99%;
+  }
+}
+
+
+/*RECENT WORK*/
+
+.title {
+  color: black;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+}
+.website-gallery {
+  width: 24.99%;
+  float: left; /*a god, lets them all fit nice and snug*/
+  overflow: hidden; /*when hovered and zooms in, you don't see overflow*/
+  
+}
+.website-gallery img {
+  transition: .3s ease;
+  border-bottom: 1px solid black;
+}
+.website-gallery:hover img{
+  transform: scale(1.1); /*very mild zoom in*/
+}
+.description {
+  color: black;
+  padding: 15px;
+  text-align: center;
+}
+
+.white-space {
+  display: block;
+  height: 100px;
+}
+
+
+/*GET IN TOUCH*/
+.get-in-touch {
+  background: url(../Images/background+2-dark.png);
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+.form-text {
+  max-width: 557px;
+  position: absolute;
+  right:55%;
+  margin: 15px;
+}
+
+.form-container {
+  max-width: 583px;
+  position: absolute;
+  left:50%;
+  margin-right: 15px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed white;
+  border-radius: 45px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  background:none;
+  transition-duration: 0.2s;
+  font-family: 'Oswald', sans-serif;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+::placeholder {
+  font-family: sans-serif;
+  color: rgb(104, 103, 103);
+  font-size:12px;
+}
+@media only screen and (max-width: 800px) {
+  .form-text {
+    display: block;
+    width: 100%;
+    right: 0;
+    position: static;
+    margin: auto;
+  }
+  .form-container{
+    display: block;
+    width: 100%;
+    left: 0;
+    position: static;
+  }
+}
+
+
+
+/*FOOTER SECTION*/
+.footer {
+  background: black;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+}
+.footer-text {
+  position: relative;
+  left:0;
+  right:0;
+  padding-top: 3.3vmax;
+  padding-bottom: 3.3vmax;
+}
+.footer-socials {
+  margin: 20px;
+  display: block;
+}
+
+
+
+
+
+/* ABOUT US PAGE */
+
+
+
+.banner.about {
+  background: url(../Images/background+onyx+online.jpg);
+  max-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-text.about {
+  position:relative;
+  top:50%;
+}
+
+
+.who-container {
+  text-align: center;
+  color:black;
+  max-width: 900px;
+  margin: 90 auto;
+}
+hr {
+  text-align: center;
+  max-width: 800px;
+
+}
+.who-text {
+  display:inline-block;
+  max-width: 400px;
+  padding: 17px;
+  text-align: center;
+}
+.profile-gallery {
+  display:inline-block;
+  max-width: 400px;
+  padding: 17px;
+  text-align: center;
+  margin: 0 50px;
+}
+.description a {
+  color: -webkit-link;
+}
+.map {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin:50 50 0 50px;
+}
+.map iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  filter: invert(90%);
+}
