@@ -1,0 +1,40 @@
+---
+layout: post
+title: How to get Frosted Buttons - SquareSpace Tutorial
+---
+
+<p>This is a simple and very popular effect that you can add to your Squarespace sites. It will work for any 7.0 template and also for the newer 7.1 version as it is pretty much just a simple Custom CSS tweak. </p>
+
+<h3>Step 1</h3>
+<p>You want to get the CSS for your buttons using Inspect Element feature on browsers. If your website is live you can directly go to the website, right click and then click inspect element. If you’re still using a trial, copy the url of your website and paste it onto a new tab. After the slash add the following </p>
+<div class="blog-font-indent">/?noredirect</div>
+
+<p>This will let you preview your site. Find you button, right click and then click inspect element. </p>
+
+<h3>Step 2</h3>
+<p>Copy paste the CSS into your custom CSS on your website (Design -> Custom CSS). </p>
+
+<h3>Step 3</h3>
+<p>First you will need to do is change the field after background-color to an rbga. So something like </p>
+
+<div class="blog-font-indent">background-color: rgba (0,0,0,0.15);</div>
+
+<p>This will get you a black background with about 0.15 transparency. The last number in the brackets controls the transparency of your color, 0 being fully transparent and 1 being fully opaque. </p>
+
+<h3>Step 4</h3>
+<p>Now to add the blur/frosted effect. It’s a simple one line of code that goes like</p>
+
+<div class="blog-font-indent">backdrop-filter: blur (3px); </div>
+
+<p>You can play around with the value that is inside the bracket for the color that you want. </p>
+
+<h3>Step 5</h3>
+<p>You want to make sure that this effect will work on the most number of browsers. To do that visit https://autoprefixer.github.io/ and paste your code in there. Copy and paste the result back into your Custom CSS and now you’ve got a cool effect in just seconds. </p>
+
+<p>Here is a screen recording of me doing it on a trial website.</p>
+<br>
+<br>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/3Cf3Dl2hkrA" 
+frameborder="0" allowfullscreen class="video"></iframe>
+</div>
