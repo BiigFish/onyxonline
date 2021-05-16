@@ -548,12 +548,15 @@ hr {
 
 .PageNavigation a {
   display: block;
+  /* I copied this code and I don't want it
   width: 50%;
   float: left;
+  */
   margin: 1em 0;
+  color:black;
 }
 
-.PageNavigation .next {
+.PageNavigation .prev {
   text-align: right;
 }
 
