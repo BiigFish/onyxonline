@@ -512,3 +512,59 @@ hr {
   width: 100%;
   height: 100%;
 }
+.blog-link a {
+  color:black;
+  display:block;
+}
+.blog-link h2 {
+  font-weight: 600;
+}
+
+.blog-link {
+  width: 25%;
+  display:inline-block;
+  height: 400px;
+  margin: 0 4%;
+  vertical-align: top;
+  color:black;
+
+}
+.blog-link img {
+  width:100%;
+}
+
+.readmore {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+
+.blog-logo img {
+  width:100px;
+  margin: 20 30px;
+}
+.blog-list {
+  font-weight:400;
+  margin: 50px 0;
+  min-height: calc(100% - 340px - 233px);
+}
+  

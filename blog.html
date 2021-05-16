@@ -1,6 +1,6 @@
 ---
 layout: home
-title: About Us
+title: Blog
 ---
 
 {% include header-blog.html%}
@@ -12,13 +12,30 @@ title: About Us
 
 
 
+<div class="blog-list">
 
-<div clss="blog-container">
-    <h1>test</h1>
     
-</div>
+        {% for post in site.posts %}
+            <a href="{{ post.url }}">
+                <div class="blog-link">
+                    <img src="{{ post.image | prepend: site.baseurl }}">
+                    <h2>{{ post.title }}</h2>      
+                    <p>{{ post.description }}</p>
+                    <div class="readmore">
+                        <a href="{{ post.url }}">Read More...</a>
+                    </div>
+                </div>
+            </a>
 
-       
+
+
+
+          
+        {% endfor %}
+    
+
+
+</div>
 
 
 
