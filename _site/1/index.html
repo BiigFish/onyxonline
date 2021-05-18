@@ -2,6 +2,8 @@
     <head>
         <title>ONYX Online</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -10,9 +12,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">                
     </head>
     <body>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="/onyxonline/">Home</a>
+      <a href="/onyxonline/about-us">About Us</a>
+      <a href="/onyxonline/#services">Our Services</a>
+      <a href="/onyxonline/blog">Blog</a>
+    </div>
+  </div>
+
 <section class="banner-blog">
     <div class=invert-header>
-     <div class="header">
+     <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="/onyxonline/">Home</a>
+      <a href="/onyxonline/about-us">About Us</a>
+      <a href="/onyxonline/#services">Our Services</a>
+      <a href="/onyxonline/blog">Blog</a>
+    </div>
+  </div>
+
+<div class="header">
     <ul>
         <div class="mobile" id="myMobile">
             <li><a href="/onyxonline/" >Home</a></li>
@@ -28,7 +50,7 @@
                 </div>
             </div>
             <span class="topnav-icon">
-                <a href="javascript:void(0);" class="fa fa-bars" onlcick="myFunction()"></a>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </span>  
         </div>
 
@@ -36,6 +58,8 @@
     </ul>
 
 </div>
+
+
     </div>
     <div class="blog-logo">
         <a href="/onyxonline/"><img src="/onyxonline/assets/Images/OnyxOnline+logo+text+2.png"></a>
@@ -92,7 +116,16 @@
 
         </section>
 
-
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+            }
+        </script>
+        
         <script src="mobile.js">
 
         </script>

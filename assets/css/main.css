@@ -148,6 +148,41 @@ body {
 
 }
 
+/*Mobile 2021*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 
 /* GALLERY STUFF */
 
@@ -217,11 +252,11 @@ body {
 /*GET IN TOUCH*/
 .get-in-touch {
   background: url(../Images/background+2-dark.png);
-  height: 750px;
+  min-height: 750px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding: 100 10 50 10px;
 }
 .form-text {
   max-width: 557px;
@@ -405,7 +440,7 @@ hr {
   text-align: center;
   max-width: 900px;
   padding:50px;
-  padding-top:30%;
+  padding-top:min(30%, 400px);
 }
 .underline {
   text-decoration: underline;
@@ -449,13 +484,31 @@ hr {
   vertical-align: top;
 }
 
+
 .line {
   width:1px;
   border-right: 1px solid white;
   margin: 0 80px;
   height: 294px;
   display: inline-block;
-
+}
+.mobile-line {
+  display:none;
+}
+@media only screen and (max-width: 800px) {
+  .price-box {
+    display: block;
+    max-width: fit-content;
+    }
+  .service-text ul {
+    padding: 0;
+  }
+  .line {
+    display:none;
+  }
+  .mobile-line {
+    display:block;
+  }
 }
 
 
@@ -490,7 +543,9 @@ hr {
   margin-bottom:80px;
   padding: 6vw;
 }
-
+.blog-font img {
+  width:100%;
+}
 
 .blog-font p {
   display:inline;
@@ -527,8 +582,17 @@ hr {
   margin: 0 4%;
   vertical-align: top;
   color:black;
-
+ }
+@media only screen and (max-width: 800px) {
+  .blog-link {
+    display: block;
+    width: 92%;
+    height: auto;
+    margin-bottom: 30px;
+  }
 }
+
+
 .blog-link img {
   width:100%;
 }
@@ -563,11 +627,11 @@ hr {
 
 .blog-logo img {
   width:100px;
-  margin: 20 30px;
+  margin: 40 30px;
 }
+
 .blog-list {
   font-weight:400;
   margin: 50px 0;
   min-height: calc(100% - 340px - 233px);
 }
-  
