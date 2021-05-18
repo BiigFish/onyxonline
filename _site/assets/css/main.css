@@ -20,6 +20,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-height: 850px) {
+  .banner {
+    background:url(../Images/background+onyx+online.jpg);
+  }
+}
 /* HEADER STUFF */
 
 .header {
@@ -107,7 +112,7 @@ body {
 .button {
   border: 1px solid white;
   padding: 10 20px;
-  margin: 40 60px;
+  margin: 40 60 0 60px;
   display: inline-block;
   transition-duration: 0.2s;
 }
@@ -415,21 +420,18 @@ hr {
 
 .web-design-section {
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/web+design+bg-suana.png);
-  height: 1287px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .seo-section {
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/ottawa+seo+bg-suana.png);
-  height: 1287px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .social-media-ads-section {
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/ottawa+social+media+ads+bg-suana.png);
-  height: 1287px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -440,7 +442,6 @@ hr {
   text-align: center;
   max-width: 900px;
   padding:50px;
-  padding-top:min(30%, 400px);
 }
 .underline {
   text-decoration: underline;
@@ -465,7 +466,6 @@ hr {
 
 .price {
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/background+onyx+online.jpg);
-  height: 1380px;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
