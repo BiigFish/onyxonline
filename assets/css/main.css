@@ -230,7 +230,7 @@ body {
   font-size: 1.5rem;
 }
 .website-gallery {
-  width: 33.2%;
+  width: 33%;
   display: inline-block;
   vertical-align: top;
   overflow: hidden; /*when hovered and zooms in, you don't see overflow*/
