@@ -538,6 +538,9 @@ table {
   margin: auto;
   border-collapse: collapse;
 }
+th {
+  font-size: 24px;
+}
 table th:not(:first-child), td:not(:first-child) {
   border-left: solid 1px grey;
 }
