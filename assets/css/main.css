@@ -428,10 +428,13 @@ hr {
 }
 
 .web-design-section {
+  background-color: black;
+  /*
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/web+design+bg-suana.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  */
 }
 .seo-section {
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../Images/ottawa+seo+bg-suana.png);
@@ -527,6 +530,88 @@ hr {
 
 
 
+/* WEBSITE SERVICE */
+.section h1 {
+  margin-top: 40px;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+table th:not(:first-child), td:not(:first-child) {
+  border-left: solid 1px grey;
+}
+table td {
+  padding: 20px 20px 0 20px;
+  width: 50%;
+  text-align: left;
+  vertical-align: top;
+}
+.summary td {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.post-table {
+  font-weight: 100;
+  margin-top: 30px;
+}
+.step2 .button {
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 50px 12px;
+  border-radius: 50%;
+  width: 100px;
+  height: 24px;
+  vertical-align: bottom;
+  margin: 50px 100px;
+}
+.step2 .button:hover {
+  padding: 100px 62px;
+  margin: 0 50px;
+}
+.price table td.tsubject {
+  width: 100px;
+}
+.price td {
+  width: auto;
+  vertical-align: middle;
+}
+.price table td.tprice {
+  width: 80px;
+}
+.text-link {
+  text-decoration: underline;
+  color: lightskyblue;
+}
+@media only screen and (max-width: 800px) {
+  .price td {
+    padding: 20px 5px 0 5px;
+  }
+  .price table td.tsubject {
+    width: 75px;
+  }
+  .step2 .button {
+    margin: 50px 50px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .price td {
+    display: block;
+    border-left: none;
+  }
+  .price td.tdescription {
+    border-bottom: solid 2px white;
+  }
+  .price td.tsubject {
+    text-decoration: underline;
+    width: 200px;
+  }
+  .step2 .button {
+    margin: 35px 25px;
+  }
+}
 
 /*BLOG*/
 .invert-header {
