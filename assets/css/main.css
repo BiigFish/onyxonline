@@ -82,13 +82,7 @@ body {
   text-decoration: none;
   padding: 0 10;
 }
-.fa-facebook {
-  color: white;
-}
-.fa-twitter {
-  color: white;
-}
-.fa-instagram {
+.fa-facebook, .fa-twitter, .fa-instagram {
   color: white;
 }
 
@@ -261,6 +255,49 @@ body {
   display: block;
   height: 100px;
 }
+
+
+/* Portfolio*/
+.portfolio {
+  font-size: 0;
+  border-bottom: solid 10px black;
+  /*  height: 37.72vw */
+}
+.portfolio-title {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  background-color: black;
+  padding: 15px 0;
+  font-size: 2.4rem;
+}
+.portfolio-container {
+  width: 80%;
+  display: inline-block;
+}
+.portfolio .img-container {
+  width: 50%;
+  display: inline-block;
+}
+.portfolio .img-container img {
+  width: 100%;
+}
+.more {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top; 
+}
+.more-text {
+  color: black;
+  font-size: 6vw;
+  display: block;
+  margin-left: 20px;
+  line-height: 1.2;
+
+}
+
 
 
 /*GET IN TOUCH*/
@@ -548,11 +585,12 @@ table td {
   padding: 20px 20px 0 20px;
   width: 50%;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .summary td {
   text-align: center;
   padding: 20px 0 0 0;
+  vertical-align: top;
 }
 .post-table {
   font-weight: 100;
@@ -570,9 +608,8 @@ table td {
   vertical-align: bottom;
   margin: 50px 100px;
 }
-.step2 .button:hover {
-  padding: 100px 62px;
-  margin: 0 50px;
+.step2 .button .button-text {
+  margin: 0;
 }
 .price table td.tsubject {
   width: 100px;
@@ -736,4 +773,44 @@ table td {
   font-weight:400;
   margin: 50px 0;
   min-height: calc(100% - 340px - 233px);
+}
+
+
+
+/* PORTFOLIO */
+.portfolio-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.portfolio-page-post {
+  margin: 30px 0;
+  padding: 5px;
+  border: solid 2px black;
+}
+.portfolio-page-image-container {
+  width: calc(50% - 40px);
+  display: inline-block;
+  margin-right: 20px;
+}
+.portfolio-page-image-container img {
+  width: 100%;
+}
+.portfolio-page-text {
+  display:inline-block;
+  margin-left: 20px;
+  width: calc(49% - 20px);
+  vertical-align: top;
+  color: black;
+}
+.portfolio-page-text h2 {
+  margin: 5px 0 20px 0; 
+}
+.portfolio-page-text a {
+  color: black;
+  border: solid 1px black;
+  padding: 1px;
+}
+.portfolio-page-text a:hover {
+  color: white;
+  background-color: black;
 }

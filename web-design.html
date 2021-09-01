@@ -30,7 +30,7 @@ title: Web Design
             </tr>
             <tr>
                 <td>Add and edit blog posts and products</td>
-                <td>Edit <b>entire</b> website including adding new pages</td>
+                <td>You have complete control of the website and can edit <b>entire</b> website including adding new pages</td>
             </tr>
             <tr>
                 <td>Can list store products but cannot conduct payment transactions</td>
@@ -49,12 +49,25 @@ title: Web Design
 <div class="section step2">
     <h1>Step 2: Plan Your Design</h1>
     <h4>What do you want on your website?</h4>
-    <div class="button">Blog</div>
-    <div class="button">Store Front</div>
-    <div class="button">Gallery</div>
-    <div class="button">Portfolio</div>
-    <p>Whatever you want, we got you.</p>
+
+    <div class="button" id="blog-circle" onclick="changeTextBlog()">
+        <p class="button-text" id="blog">Blog</p>
+    </div>
+    <div class="button" id="store-circle" onclick="changeTextStore()">
+        <p class="button-text" id="store">Store Front</p>
+    </div>
+    <div class="button" id="gallery-circle" onclick="changeTextGallery()">
+        <p class="button-text" id="gallery">Gallery</p>
+    </div>
+    <div class="button" id="portfolio-circle" onclick="changeTextPortfolio()">
+        <p class="button-text" id="portfolio">Portfolio</p>
+    </div>
+   
+    <p>We'll plan together to create your vision. Whatever you want, we got you.</p>
 </div>
+
+<script src="/assets/js/web-design-buttons.js"></script>
+
 
 <div class="section step3">
     <h1>Step 3: Sit back and let us do our work</h1>
@@ -101,5 +114,29 @@ title: Web Design
     </div>
 
 </section>
+
+<section class="portfolio">
+    <span class="portfolio-title">Portfolio</span>
+    <div class="portfolio-container">
+        <div class="img-container">
+            <a href="https://www.35mm.website/"><img src="{{site.baseurl}}/assets/Images/35mm.jpg" alt="35mm"></a>
+        </div>
+        <div class="img-container">
+            <a href="https://www.thatmakergirl.ca/"><img src="{{site.baseurl}}/assets/Images/ThatMakerGirl.jpg" alt="ThatMakerGirl"></a>
+        </div>
+        <div class="img-container">
+            <a href="https://mess-segm.ca/"><img src="{{site.baseurl}}/assets/Images/mess.jpg" alt="MESS site"></a>
+        </div>
+        <div class="img-container">
+            <a href="https://uottawampsp.com/"><img src="{{site.baseurl}}/assets/Images/uottawa+mpsp.jpg" alt="MPSP site"></a>
+        </div>
+    </div>
+    <div class="more">
+        <a class="more-text" href="/portfolio">View<br>Our<br>Other<br>Web-<br>Sites<br>Here</a>
+    </div>
+
+</section>
+
+
 
 {% include contact.html %}
