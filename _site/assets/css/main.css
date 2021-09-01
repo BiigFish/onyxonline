@@ -598,7 +598,7 @@ table td {
 }
 .step2 .button {
   text-transform: uppercase;
-  display: inline-block;
+  display: block;
   background-color: white;
   color: black;
   padding: 50px 12px;
@@ -606,7 +606,7 @@ table td {
   width: 100px;
   height: 24px;
   vertical-align: bottom;
-  margin: 50px 100px;
+  margin: 50px auto;
 }
 .step2 .button .button-text {
   margin: 0;
@@ -632,9 +632,6 @@ table td {
   .price table td.tsubject {
     width: 75px;
   }
-  .step2 .button {
-    margin: 50px 50px;
-  }
 }
 @media only screen and (max-width: 650px) {
   .price td {
@@ -647,9 +644,6 @@ table td {
   .price td.tsubject {
     text-decoration: underline;
     width: 200px;
-  }
-  .step2 .button {
-    margin: 35px 25px;
   }
 }
 
